@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./fonts/Tajawal-Regular.woff2') format('woff2'),
+       url('./fonts/Tajawal/Tajawal-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./fonts/Tajawal/Tajawal-Medium.ttf') format('woff2'),
+       url('./fonts/Tajawal/Tajawal-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Expo Arabic Book";
+  src: url("./fonts/Expo_Arabic_Book/Expo\ Arabic\ Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Expo Arabic Bold";
+  src: url("./fonts/ExpoArabic-Bold.ttf") format("truetype"),
+       url("./fonts/ExpoArabic-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    padding: 36px 21px 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    max-width: 1400px;
+    width: 100%;
+    height: 105px;
+    background-color: #DBECE6;
+    padding: 29px 63px 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px #127664;
+    border-radius: 37px;
+    margin-bottom: 50px;
+}
+
+#logo{
+    width: 73px;
+    height: 48px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 875px;
+    height: 48px;
+}
+
+.links ul{
+    display: flex;  
+    list-style-type: none;  
+    width: 661px;
+    height: 31px;
+    gap: 30px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+}
+
+.selected-link{
+    border-bottom: 1px solid #159265;
+}
+
+.selected-link a{
+    color: #159265;
+}
+
+.user-lang{
+    width: 271px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user{
+    width: 50px;
+    height: 50px;
+}
+
+
+.box,
+.lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.box{
+    width: 133px;
+    height: 49px;
+    border: solid 2px #127664;
+    border-radius: 8px;
+    background-color: #1592651A;
+}
+
+.box a{
+    font-weight: 700;
+    font-size: 16px;
+    color: #127664;
+}
+
+.lang{
+    width: 61px;
+    height: 49px;
+    gap: 2px;
+    border: solid 1px #00000021;
+    border-radius: 8px;
+    background-color: #F8F8F845;
+    color: #333333;
+    cursor:default;
+}
+
+#global{
+    width: 24px;
+    height: 24px;
+}
+
+.hero-section{
+    max-width: 1400px;
+    width: 100%;
+    height: 414px;
+}
+
+.hero-section .banner{
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 30px #127664;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 29px 63px 29px;
+    background-color: antiquewhite;
+    gap: 28px;
+}
+
+.img{
+    height: 183px;
+    padding: 20px 0 20px;
+}
+
+#hero-img{
+    width: 81px;
+    height: 81px;
+}
+
+.hero-section .banner .hero-text{
+    width: 481px;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.hero-section .banner .hero-text .text{
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.hero-text h1{
+    width: 100%;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 48px;
+    font-family: "Expo Arabic Bold", sans-serif;
+}
+
+.hero-text h2{
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 46px;
+}
+
+.hero-text .join-us{
+    width: 216px;
+    height: 61px;
+    border-radius: 50px;
+    padding: 0 10px 0;
+    font-family: "Expo Arabic Bold", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    background: linear-gradient(to top, #DF4D2D, #FF603C);
+}
